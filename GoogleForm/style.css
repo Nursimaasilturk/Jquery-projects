@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 50vh;
+  height: 60vh;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.logo {
+  width: 100%;
+  text-align: center;
+}
+.logo img {
+  height: 40px;
+  user-select: none;
+}
+form {
+  padding-top: 1.5rem;
+}
+.form-box h1 {
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  color: #4285f4;
+  font-family: "productsans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.form-box span {
+  display: block;
+  padding-top: 10px;
+  color: #010f24;
+  font-weight: 400;
+  text-align: center;
+}
+form .input-box {
+  width: 100%;
+  position: relative;
+  padding: 18px 0 8px;
+}
+form .input-box .input-field {
+  width: 90%;
+  height: 50px;
+  margin: auto 1rem;
+  background-color: transparent;
+  padding: 12px 15px;
+  border: 1px solid #dadce0;
+  border-radius: 0.3rem;
+  outline: none;
+  font-weight: 300;
+  transition: all 150ms;
+}
+form .input-box .input-field:focus {
+  border: 2px solid #1a73e8;
+}
+
+form .input-box .input-field:focus + .placeholder {
+  color: #1a73e8;
+}
+form .input-box .input-field:focus + .placeholder,
+form .input-box .input-field.has-value + .placeholder {
+  transform: scale(0.75) translateY(-35px);
+}
+form .input-box .placeholder {
+  padding: 0 8px;
+  color: #80868b;
+  font-weight: 300;
+  position: absolute;
+  top: 30px;
+  left: 24px;
+  transform-origin: bottom left;
+  pointer-events: none;
+  background-color: #ffff;
+  transition: all 150ms;
+}
+.forgot {
+  color: #1a73e8;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.create-account {
+  padding: 5px 0;
+  color: #1a73e8;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.sign-in {
+  padding: 10px 25px;
+  background-color: #1a73e8;
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: all 150ms;
+}
+.sign-in:hover {
+  box-shadow: 0 3px 5px #1a73e83b;
+}
+.sign-in:active {
+  box-shadow: none;
+}
